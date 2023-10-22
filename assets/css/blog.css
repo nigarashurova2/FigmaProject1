@@ -1,0 +1,80 @@
+main.blog{
+    padding: 40px 0;
+    >.container {
+        max-width: 73%;
+        >.header-section{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+           >h4{
+            color: var(--Dark-Color, #21243D);
+            font-family: Heebo;
+            font-size:44px;
+            font-style: normal;
+            font-weight: bold;
+        }
+        }
+        >.cards{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            margin-top: 10px;
+            >.card{
+                padding: 20px 0;
+                border: none;
+                border-bottom: .8px solid rgb(226, 223, 223);
+                border-radius: 0;
+                >.title{
+                    color: var(--Dark-Color, #21243D);
+                    font-family: Heebo;
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+                >.text{
+                    color: var(--Dark-Color, #21243D);
+                    font-family: Heebo;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                >.dateInfo{ 
+                    margin:0 0 15px;
+                    >span{
+                        padding-right: 15px;
+                    }
+                    >span.textRight{
+                        border-left: 1px solid black;
+                        padding-left: 15px;
+                    
+                    }
+                }
+               
+            }
+           }
+    }
+   
+
+}
+
+@media screen and (max-width: 768px) {
+    main.blog{
+        padding: 10px 0;
+        >.container {
+            max-width: 95% !important;
+            >.cards .card{
+                padding: 10px 0 15px;
+                    >.title{
+                        font-size: 22px;
+                    }
+                    >.text{
+                        font-size: 14px;
+                    }
+               }
+        }
+    }
+  }
